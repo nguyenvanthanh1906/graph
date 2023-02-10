@@ -8,7 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue-flow/background": "^1.0.3",
+    "@vue-flow/controls": "^1.0.2",
     "@vue-flow/core": "^1.14.2",
+    "@vue-flow/minimap": "^1.0.2",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },

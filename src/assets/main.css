@@ -1,6 +1,13 @@
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/core@1.14.2/dist/style.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/core@1.14.2/dist/theme-default.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/controls@latest/dist/style.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/minimap@latest/dist/style.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/node-resizer@latest/dist/style.css';
+
+
 :root {
   --grey: #e5e7eb;
-  --item-background-color: #b6b8bb;
+  --item-background-color: #fff;
 
   --header-height: 60px;
   --items-width: 150px;
@@ -20,6 +27,12 @@ body {
 .header {
   background-color: var(--grey);
   height: var(--header-height);
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(80, 80, 80);
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
@@ -38,9 +51,9 @@ body {
 
 .container .container-items .item {
   background-color: var(--item-background-color);
-  border-radius: 5px;
   padding: 5px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .container .container-editor {
@@ -50,4 +63,29 @@ body {
 .container .container-content-element {
   width: var(--content-width);
   background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .container-content-element textarea, input {
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+
+.container .container-content-element label {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.clear-button {
+  background-color: red;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.form-input {
+  
 }
