@@ -3,6 +3,7 @@
 @import 'https://cdn.jsdelivr.net/npm/@vue-flow/controls@latest/dist/style.css';
 @import 'https://cdn.jsdelivr.net/npm/@vue-flow/minimap@latest/dist/style.css';
 @import 'https://cdn.jsdelivr.net/npm/@vue-flow/node-resizer@latest/dist/style.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css';
 
 
 :root {
@@ -88,4 +89,72 @@ body {
 
 .form-input {
   
+}
+
+.collapse-button {
+  background-color: rgb(3, 180, 3);
+  border: none;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.group-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-bottom: 5px solid black;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #f00;
+}
+
+.arrow-right {
+  width: 10px;
+  height: 10px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+  border-left: 8px solid gray;
+  cursor: pointer;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-right:10px solid blue;
+}
+
+.vue-flow__handle {
+  left: 5%;
+  opacity: 0;
+}
+
+.vue-flow__node {
+  width: 500px;
+}
+
+.vue-flow__node:active {
+  border: 2px;
+}
+
+.delete-button {
+  color:rgb(79, 156, 243);
+  cursor: pointer;
+  pointer-events: all;
 }
